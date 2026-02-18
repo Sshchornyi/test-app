@@ -73,3 +73,25 @@ Note: This project is not published to npm; there is no npx distribution.
   npm test
   ```
   Note: There are currently no formal test files in the repository; this command will run with Node’s test runner but does not execute project-specific tests.
+
+## Project Structure
+
+```
+test-app/
+├─ index.js                # CLI entrypoint that orchestrates the quiz flow
+├─ package.json            # Package metadata, engines (Node >= 18), scripts
+├─ data/
+│  └─ questions.json       # Quiz data: categories and questions
+├─ src/
+│  ├─ colors.js            # ANSI color helpers for styled terminal output
+│  ├─ input.js             # Readline utilities: prompt, select, confirm, pressEnter
+│  └─ quiz.js              # Quiz class: shuffling, question loop, progress, results
+```
+
+### Key Files
+
+- `index.js`: Shows banner, loads data, handles category/length selection, runs the quiz, displays results, offers replay, and exits gracefully.
+- `src/colors.js`: Provides small helpers to colorize text in the terminal using ANSI codes.
+- `src/input.js`: Encapsulates user interaction via Node’s readline (prompting, selection lists, yes/no confirmations).
+- `src/quiz.js`: Implements the quiz mechanics (shuffle questions, ask/validate answers, track correct/incorrect, review explanations).
+- `data/questions.json`: The source of quiz content, organized by categories.
