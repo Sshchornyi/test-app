@@ -95,3 +95,30 @@ test-app/
 - `src/input.js`: Encapsulates user interaction via Node’s readline (prompting, selection lists, yes/no confirmations).
 - `src/quiz.js`: Implements the quiz mechanics (shuffle questions, ask/validate answers, track correct/incorrect, review explanations).
 - `data/questions.json`: The source of quiz content, organized by categories.
+
+## Data Format
+
+Questions are defined in `data/questions.json`. High-level schema:
+
+- `categories`: an object where each key is a category name.
+- Each category maps to an array of question objects:
+  - `question`: string prompt
+  - `options`: array of possible answers (strings)
+  - `answer`: number index of the correct option
+  - `explanation`: string shown when reviewing incorrect answers
+
+Example (minimal):
+```json
+{
+  "categories": {
+    "javascript": [
+      {
+        "question": "Which array method returns a new array with elements that pass a test?",
+        "options": ["map", "filter", "reduce"],
+        "answer": 1,
+        "explanation": "filter creates a new array with elements that satisfy the provided condition."
+      }
+    ]
+  }
+}
+```
