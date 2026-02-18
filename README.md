@@ -26,3 +26,23 @@ This repository (test-app; package name: quiz-cli) is a simple, interactive CLI 
 
 - Node.js >= 18.0.0
 - A terminal that supports interactive input (readline) and ANSI colors (for best experience)
+
+## Quick Start
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sshchornyi/test-app.git
+   cd test-app
+   ```
+2. Install (optional): there are no external dependencies, so `npm install` is not required.
+3. Run the app:
+   - Using npm script:
+     ```bash
+     npm start
+     ```
+   - Or directly with Node:
+     ```bash
+     node index.js
+     ```
+
+Note: This project is not published to npm; there is no npx distribution.
