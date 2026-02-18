@@ -61,3 +61,15 @@ Note: This project is not published to npm; there is no npx distribution.
    - View your score summary.
    - Review incorrect answers with explanations.
 4. Decide whether to play again when prompted.
+
+## Scripts
+
+- `start`: Run the quiz CLI
+  ```bash
+  npm start
+  ```
+- `test`: Execute Node’s built-in test runner
+  ```bash
+  npm test
+  ```
+  Note: There are currently no formal test files in the repository; this command will run with Node’s test runner but does not execute project-specific tests.
