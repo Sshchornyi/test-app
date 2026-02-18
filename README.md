@@ -122,3 +122,39 @@ Example (minimal):
   }
 }
 ```
+
+## Development Notes
+
+- ES Modules: The project uses import/export and the "type": "module" workflow with Node >= 18.
+- No external dependencies: All functionality relies on Node’s built-in modules (e.g., readline, fs).
+- Extending questions/categories:
+  - Add a new category key under categories in data/questions.json.
+  - Provide an array of question objects matching the schema above.
+- Extending colors:
+  - Add new helper functions to src/colors.js that wrap strings with ANSI codes.
+- Extending input:
+  - Add additional prompt utilities in src/input.js for new interaction patterns (e.g., multi-select) using readline.
+
+## Troubleshooting
+
+- Node version errors:
+  - Ensure Node.js >= 18.0.0. Older versions may fail due to ES Modules and APIs used.
+- Terminal color issues:
+  - Colored output relies on ANSI escape codes. If your terminal does not support ANSI colors, text may appear unstyled.
+- Running from the project root:
+  - Make sure you run npm start or node index.js from the repository root so paths to data/questions.json resolve correctly.
+
+## Contributing
+
+Contributions are welcome!
+
+- Fork the repository
+- Create a feature branch
+- Make your changes and verify the CLI runs locally
+- Open a pull request with a clear description and, if applicable, sample data updates
+
+Please open an issue first for significant changes to discuss what you’d like to improve.
+
+## License
+
+MIT License. See https://opensource.org/licenses/MIT for details.
