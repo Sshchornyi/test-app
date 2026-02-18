@@ -8,3 +8,17 @@ An interactive command-line quiz game for learning JavaScript/Node fundamentals.
 ![Branch](https://img.shields.io/badge/branch-main-blue)
 
 ## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Data Format](#data-format)
+- [Configuration Notes](#configuration-notes)
+- [Scripts](#scripts)
+- [Development](#development)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
