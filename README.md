@@ -46,3 +46,18 @@ This repository (test-app; package name: quiz-cli) is a simple, interactive CLI 
      ```
 
 Note: This project is not published to npm; there is no npx distribution.
+
+## How to Play
+
+1. Start the app:
+   ```bash
+   npm start
+   ```
+2. Follow the prompts:
+   - Select a quiz category from the list (e.g., javascript, nodejs, general).
+   - Choose the number of questions (options depend on data availability).
+   - Read each question and enter the number of your chosen answer, then press Enter.
+3. After the last question:
+   - View your score summary.
+   - Review incorrect answers with explanations.
+4. Decide whether to play again when prompted.
